@@ -1,10 +1,10 @@
 import React,{FC, useContext} from 'react';
-import { IUser } from './UserList';
+import { IUser } from '../UserList';
 // import { RootState } from "../store/slices";
 import { TypedUseSelectorHook, useSelector} from "react-redux";
-import { RootState } from '../store';
+import { RootState } from '../../store';
 import { observer } from 'mobx-react';
-import { Context,useStore } from '..';
+import { Context,useStore } from '../..';
 
 type Props = {
     deleteUser: (id: string) => void
