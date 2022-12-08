@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component form List snapshot 1`] = `
+<div>
+  <div>
+    <label>
+      <input
+        type="text"
+        value=""
+      />
+    </label>
+    <ul>
+      <li>
+        Volvo
+      </li>
+      <li>
+        VW
+      </li>
+      <li>
+        Opel
+      </li>
+    </ul>
+  </div>
+</div>
+`;

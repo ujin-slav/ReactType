@@ -25,7 +25,17 @@ describe('Test component form',()=>{
     test('renders learn react link', () => {
         render(<Form listAuto={lustAuto}/>);
         const linkElement = screen.getByText(/Opel/i);
-        expect(linkElement).toBeInTheDocument();
+        expect(screen.getByRole('list')).toBeInTheDocument()
+        expect(linkElement).toBeInTheDocument()
+    });
+    test('renders without data', () => {
+      render(<Form/>);
+      // const linkElement = screen.queryByRole('list');
+      // expect(linkElement).not.toBeInTheDocument()
+    });
+    test('List snapshot', () => {
+      const { container } = render(<Form listAuto={lustAuto}/>)
+      expect(container).toMatchSnapshot()
     });
 })
 
